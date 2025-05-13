@@ -22,5 +22,6 @@ jobs:
         run: ./scripts/buildprod.sh
 
       - name: Build Docker image
-        run: docker build -t andybzn/notely: latest .
+        run: | 
+          docker build -t andybzn/notely:latest .
       
